@@ -1,10 +1,17 @@
 /** @format */
 body {
-  background-color: #242dfe;
-  padding: 10px;
   box-sizing: border-box;
+  background-color: #242dfe;
+  padding: 30px;
+  width: 100%;
+}
+a {
+  color: white;
 }
 
+.top {
+  background-color: #242dfe;
+}
 .banner {
   background-color: aliceblue;
   height: 100%;
@@ -16,7 +23,8 @@ body {
   justify-content: space-between;
 }
 
-.arclight_logo {
+.arclight_logo,
+.Footer_logo {
   height: 40px;
 }
 
@@ -82,10 +90,10 @@ button {
 
 .mapArea {
   background: url("assets/Map.svg") no-repeat;
+  background-position: center center;
   min-height: 400px;
   width: 100%;
-  background-size: auto;
-  background-position: center;
+  background-size: cover;
   position: relative;
 }
 
@@ -153,22 +161,23 @@ button {
 /* HEADING */
 
 .heading {
-  font-size: 5.5rem;
+  font-size: 70px;
+  letter-spacing: 5px;
 }
 
 /* DETAILS */
 .details {
-  font-size: 3.2rem;
+  font-size: 28px;
 }
 
 .startButton {
   border: none;
   background-color: #242dfe;
   color: aliceblue;
-  padding: 40px;
+  padding: 15px;
   border-radius: 3px;
   font-weight: 600;
-  font-size: 3rem;
+  font-size: 28px;
   width: 100%;
 }
 
@@ -176,13 +185,13 @@ button {
   display: flex;
   justify-content: center;
   margin-top: 50px;
-  font-size: 3rem;
+  font-size: 24px;
   align-items: center;
 }
 
 .playbutton {
-  height: 64px;
-  margin-right: 32px;
+  height: 40px;
+  margin-right: 10px;
 }
 
 .review {
@@ -201,6 +210,291 @@ button {
   color: black;
 }
 
+.customers {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 50px;
+}
 .customers > img {
-  width: 200px;
+  width: 100px;
+}
+
+.dashboard {
+  padding: 60px 60px 0 60px;
+}
+
+.dashboardDetails {
+  color: white;
+  font-size: 24px;
+}
+
+.dashboardDetails h1 {
+  font-size: 40px;
+  margin-bottom: -5px;
+}
+
+.dashboardDetails ul {
+  padding-left: 0;
+  margin-top: 40px;
+}
+
+.dashboardDetails li,
+.startups li,
+.enterprises li,
+.plans li {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  list-style-type: none;
+  font-size: 24px;
+}
+
+.dashboardDetails img,
+.startups img,
+.enterprises img,
+.plans img {
+  height: 60px;
+}
+
+.dashImage {
+  width: 100%;
+}
+
+.bottom {
+  padding: 60px;
+  background-color: white;
+}
+
+.serviceCategory {
+  background-color: white;
+}
+
+.services {
+  width: 100%;
+}
+
+.startups,
+.enterprises,
+.starter {
+  background-color: #242dfe;
+  padding: 40px;
+  margin-top: 50px;
+  color: white;
+}
+
+.startups h1,
+.enterprises h1 {
+  font-size: 36px;
+}
+
+.startups p,
+.enterprises p,
+.basic p,
+.starter p,
+.pro p {
+  font-size: 24px;
+}
+
+.startups ul,
+.enterprises ul,
+.plans ul {
+  padding-left: 0;
+  list-style-type: none;
+}
+
+.basic,
+.pro,
+.starter {
+  padding-left: 100px;
+  padding-right: 100px;
+  border-radius: 20px;
+}
+
+.basic h1,
+.pro h1,
+.starter h1 {
+  font-size: 40px;
+  margin-top: -15px;
+  margin-bottom: -20px;
+}
+
+.basic span,
+.starter span,
+.pro span {
+  color: gray;
+  font-size: 2rem;
+}
+
+.basic button,
+.pro button {
+  background-color: #242dfe;
+  color: white;
+  font-size: 5rem;
+  width: 100%;
+  border-radius: 10px;
+  margin-top: 30px;
+}
+
+.starter button {
+  background-color: white;
+  color: #242dfe;
+  font-size: 5rem;
+  width: 100%;
+  border-radius: 10px;
+  margin-top: 30px;
+}
+
+.footer {
+  color: white;
+  padding: 100px 40px;
+}
+
+.footer ul {
+  padding-left: 0;
+}
+
+.footer li,
+.footer a {
+  list-style-type: none;
+  text-decoration: none;
+  margin-top: 40px;
+}
+
+.arclight,
+.company,
+.services,
+.resources {
+  margin-bottom: 40px;
+}
+
+/* TABLET MEDIA QUERY  */
+@media only screen and (min-width: 550px) {
+  .starting {
+    display: flex;
+    justify-content: flex-start;
+    gap: 20px;
+    max-height: 70px;
+  }
+
+  .startButton {
+    padding: 0;
+    font-weight: 300;
+    font-size: 20px;
+    width: 250px;
+  }
+
+  .play {
+    align-items: center;
+    margin-top: 0;
+  }
+
+  .review {
+    flex-direction: row;
+    gap: 10px;
+  }
+
+  .review {
+    margin-top: 20px;
+  }
+
+  .plans {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+  }
+
+  .basic {
+    order: 1;
+    width: 40%;
+    padding: 10px;
+  }
+  .plans button {
+    font-size: 32px;
+  }
+
+  .pro {
+    order: 2;
+    width: 40%;
+    padding: 10px;
+  }
+
+  .starter {
+    order: 3;
+    width: 100%;
+  }
+
+  .footer {
+    font-size: 24px;
+  }
+
+  .arclight {
+    width: 60%;
+  }
+
+  .footer_links {
+    display: flex;
+  }
+
+  .arclight,
+  .company,
+  .services,
+  .resources {
+    flex: 1;
+  }
+
+  .footer li,
+  .footer a {
+    margin-top: 15px;
+  }
+}
+
+/* DESKTOP MEDIA QUERY  */
+
+@media only screen and (min-width: 1100px) {
+  .banner_nav {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  .banner_nav img {
+    flex: 1.2;
+    margin-left: -80px;
+  }
+
+  .dropDown {
+    flex: 2;
+  }
+
+  .dropDownContent {
+    display: flex;
+    position: initial;
+    flex: 1;
+    justify-content: space-between;
+    width: initial;
+    background-color: initial;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .dropDownContent ul {
+    display: flex;
+  }
+
+  .mapAndDetails {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  .mapArea {
+    flex: 2;
+  }
+
+  .productDetails {
+    flex: 3;
+  }
 }
